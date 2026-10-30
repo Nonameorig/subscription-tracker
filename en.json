@@ -1,0 +1,19 @@
+{
+  "title": "📊 Subscriptions",
+  "label_name": "Service name",
+  "placeholder_name": "e.g., YouTube",
+  "label_amount": "Amount",
+  "label_currency": "Currency",
+  "label_date": "Payment date",
+  "btn_add": "Add",
+  "section_upcoming": "Upcoming payments",
+  "empty_text": "You have no subscriptions yet.<br>Add the first one to track your expenses.",
+  "btn_delete": "Delete",
+  "total_label": "Total in",
+  "alert_fill": "Please fill in all fields correctly.",
+  "confirm_delete": "Delete subscription?",
+  "day_today": "Today",
+  "day_tomorrow": "Tomorrow",
+  "day_overdue": "Overdue",
+  "day_days": "days"
+}

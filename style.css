@@ -1,0 +1,65 @@
+:root {
+  --bg: #0b1120;
+  --surface: #1e293b;
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --accent: #3b82f6;
+  --accent-hover: #2563eb;
+  --danger: #ef4444;
+  --danger-bg: rgba(239, 68, 68, 0.15);
+  --warning: #f59e0b;
+  --warning-bg: rgba(245, 158, 11, 0.15);
+  --success: #10b981;
+  --success-bg: rgba(16, 185, 129, 0.15);
+}
+
+* { box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; -webkit-tap-highlight-color: transparent; }
+body { background: var(--bg); color: var(--text-main); margin: 0; padding: 16px; display: flex; justify-content: center; }
+.container { width: 100%; max-width: 600px; }
+
+.header-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+h1 { font-size: 22px; font-weight: 600; margin: 0; }
+
+.lang-select { 
+  width: auto; padding: 8px 12px; border-radius: 8px; border: 1px solid #334155; 
+  background: var(--surface); color: var(--text-main); font-size: 14px; font-weight: bold;
+}
+
+.card { background: var(--surface); padding: 16px; border-radius: 16px; margin-bottom: 16px; }
+.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.form-grid .full-width { grid-column: span 2; }
+.form-group { display: flex; flex-direction: column; gap: 6px; }
+label { font-size: 12px; color: var(--text-muted); padding-left: 4px; }
+
+input, select { width: 100%; padding: 14px; border-radius: 12px; border: 1px solid #334155; background: var(--bg); color: var(--text-main); font-size: 16px; transition: border-color 0.2s; appearance: none; }
+input:focus, select:focus { outline: none; border-color: var(--accent); }
+select { background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%2394a3b8%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E"); background-repeat: no-repeat; background-position: right 14px top 50%; background-size: 12px auto; padding-right: 40px; }
+input[type="date"]::-webkit-calendar-picker-indicator { filter: invert(1); opacity: 0.6; }
+
+button { width: 100%; padding: 16px; border-radius: 12px; border: none; background: var(--accent); color: white; font-size: 16px; font-weight: 600; cursor: pointer; transition: background 0.2s; }
+button:active { background: var(--accent-hover); transform: scale(0.98); }
+
+.section-title { font-size: 16px; font-weight: 600; margin: 24px 0 12px 4px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; }
+
+.sub-list { display: flex; flex-direction: column; gap: 12px; }
+.sub-card { background: var(--surface); border-radius: 16px; padding: 16px; display: flex; flex-direction: column; gap: 12px; }
+.sub-header { display: flex; justify-content: space-between; align-items: flex-start; }
+.sub-name { font-size: 18px; font-weight: 600; word-break: break-word; }
+.sub-price { font-size: 18px; font-weight: 700; white-space: nowrap; }
+.sub-footer { display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #334155; padding-top: 12px; margin-top: 4px; }
+.sub-date { font-size: 14px; color: var(--text-muted); }
+
+.badge { font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 8px; }
+.badge.soon { background: var(--warning-bg); color: var(--warning); }
+.badge.today { background: var(--danger-bg); color: var(--danger); }
+.badge.normal { background: var(--success-bg); color: var(--success); }
+
+.btn-del { width: auto; padding: 8px 16px; font-size: 14px; background: var(--danger-bg); color: var(--danger); border-radius: 8px; font-weight: 500; }
+.btn-del:active { background: rgba(239, 68, 68, 0.3); transform: scale(0.95); }
+
+.totals-container { margin-top: 24px; display: flex; flex-direction: column; gap: 8px; }
+.total-row { background: var(--surface); border-radius: 12px; padding: 16px; display: flex; justify-content: space-between; align-items: center; }
+.total-label { color: var(--text-muted); font-size: 15px; }
+.total-value { font-size: 18px; font-weight: 700; color: var(--accent); }
+
+.empty-state { text-align: center; color: var(--text-muted); padding: 40px 20px; font-size: 15px; }

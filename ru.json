@@ -1,0 +1,19 @@
+{
+  "title": "📊 Подписки",
+  "label_name": "Название сервиса",
+  "placeholder_name": "Например, YouTube",
+  "label_amount": "Сумма",
+  "label_currency": "Валюта",
+  "label_date": "Дата платежа",
+  "btn_add": "Добавить",
+  "section_upcoming": "Ближайшие оплаты",
+  "empty_text": "У вас пока нет подписок.<br>Добавьте первую, чтобы отслеживать расходы.",
+  "btn_delete": "Удалить",
+  "total_label": "Итого в",
+  "alert_fill": "Пожалуйста, заполните все поля корректно.",
+  "confirm_delete": "Удалить подписку?",
+  "day_today": "Сегодня",
+  "day_tomorrow": "Завтра",
+  "day_overdue": "Просрочено",
+  "day_days": "дн."
+}
